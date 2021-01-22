@@ -1,0 +1,68 @@
+/* Ressetting magin and padding to zero in whole page */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* Setting background pic to webpage */
+    background: url(img.jpeg) no-repeat center center fixed;
+    /* if you pic not setting up background properly then we use bacground size for setting it */
+    background-size: cover;
+}
+/* we want to modifications to container which is a class */
+.container{
+    /* border: 12px solid blueviolet; */
+    color: black;
+    /* Here setting up the container in center */
+    position:absolute;
+    top: 20%;
+    left:40%;
+}
+/* now we want to reflect changes in container->h1 then we do like below */
+.container h1{
+    display: inline-block;
+    font-size: 35px;
+    /* Giving border in bottom to h1 */
+    border-bottom: 5px solid darkcyan; 
+    margin-bottom: 15px;
+    padding:13px 0;
+}
+/* Applying changes in box class */
+.box{
+    /* here by setting up width 100% is not going to help we have to change in input to get changes */
+    width: 100%;
+    /* border: 2px solid purple; */
+    /* it gives space between the boxes */
+    margin: 15px 0px;
+    border: 2px solid darkcyan;
+}
+/* Applying changes in box->i tag */
+.box i{
+    width: 25px;
+    text_align: center;
+}
+/* Applying changes in box->input */
+.box input{
+    background: none;
+    width: 75%;
+    margin:2px 23px;
+    font-size: 20px;
+    border: none;
+    outline:none;
+    color: black;
+}
+/* Appling changes in button btn */
+.btn{
+    cursor: pointer;
+    outline: none;
+    width: 25%;
+    margin: 4px 0;
+    padding: 6px;
+    /* border: 2px solid purple; */
+    border-radius: 10px;
+}
+.btn:hover{
+    opacity: 0.5;
+    color:green; 
+    background: black; 
+}
