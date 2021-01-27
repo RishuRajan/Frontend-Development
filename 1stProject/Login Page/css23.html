@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <style>
+        /* Applying changes in body */
+        body{
+            margin:0px;
+            padding: 0px;
+            background: black;
+            color: white;
+        }
+        /* Applying before pseudo selector to specify clarity in text in webpage as well as setting up background image perfectly */
+        header::before{
+            /* Applying background pic in webpage */
+           background: url('https://source.unsplash.com/user/erondu/1600x900') no-repeat center center/cover;
+           content:"";
+           position: absolute;
+           width: 100%;
+           height: 100%;
+           /* using top-0 left-0 we cover some gap which comes on our webpage on those sides */
+           top:0;
+           left:0;
+           /* After Applying before pseudo selector on header and applying images in background we can't see text writte on webpage now so to solve this issue we use z-index */
+           z-index: -1;
+           /* Now we using opacity property for clearity of text written on webgage as it make image light */
+           opacity:0.5;
+
+        }
+        .navigation{
+            font-family: 'Oswald', sans-serif;
+            font-size:20px;
+            display:flex;
+        }
+        li{
+            list-style: none;
+            padding: 30px 20px;
+        }
+        section{
+            font-family: 'Oswald', sans-serif;
+            height: 344px;
+            margin: 3px 23px;
+            display: flex;
+            /* By default Flex direction is row */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        /* using before pseudo selector we inserting any content before any tag (section) */
+        /* section::before{
+            content:"this is a content";
+        } */
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+            
+        </nav>
+    </header>
+        <section>
+            <h1>Welcome To Rishu's Coding World</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quos, enim repellendus tempora sint laborum molestiae ipsam incidunt placeat sapiente veritatis sed quis at, voluptates vel, sit nobis perferendis corporis.</p>
+        </section>
+</body>
+</html>
