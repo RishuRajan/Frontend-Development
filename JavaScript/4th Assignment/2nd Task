@@ -1,0 +1,14 @@
+Question 2
+Write a javascript program that will take 2 numbers from the HTML page and display them on the
+HTML page after the addition of those 2 numbers.
+Hint: Your HTML page should look like this.
+
+CODE-
+
+console.log("\nQuestion 2:-")
+function add(){
+var num1=document.getElementById("n1").value;
+var num2=document.getElementById("n2").value;
+var sum=Number(num1)+Number(num2);
+document.getElementById("result").value=sum
+}
