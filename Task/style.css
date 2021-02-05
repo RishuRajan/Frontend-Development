@@ -1,0 +1,38 @@
+/* 
+
+Project Name: Cookie Monster 
+Client: Cookie Monster
+Author: Rishu Rajan
+
+*/
+
+body {
+	/* here we setting up image cookie monster which is outside css folder and present inside image folder*/
+	background: url('../images/cookie-monster.jpg');
+	/* the follow is the code to have the image display as a full page */
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#container{
+	padding:10px;
+	background: black;
+	width:450px;
+	color:white;
+}
+h1{
+	font-size: 80px;
+}
+h2{
+	color:black;
+	background: #A7CAE0;
+	padding: 4px;
+	border-radius: 4px;
+}
+p a{
+	color: #A7CAE0;
+	text-decoration: none;
+}
